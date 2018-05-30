@@ -11,9 +11,9 @@ import java.util.concurrent.TimeUnit;
 public class RegisterUsers {
     public WebDriver driver;
 	Object[][] testObjArray;
-	static String chromePath = System.getProperty("user.dir")+"\\drivers\\chromedriver.exe";
+	static String chromePath = System.getProperty("user.dir")+"/drivers/chromedriver.exe";
 	String xpathLoc = ".//*[contains(text(),'Note: Your user name is')]";
-	String testCaseWorkBook = System.getProperty("user.dir") + "\\testdata\\FlightRegisterData.xlsx";
+	String testCaseWorkBook = System.getProperty("user.dir") + "/resources/FlightRegisterData.xlsx";
 	
 	public void navigateTo(){
 		System.setProperty("webdriver.chrome.driver", chromePath);	
